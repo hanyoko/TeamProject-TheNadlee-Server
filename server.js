@@ -42,9 +42,9 @@ app.post("/upload",upload.single("file"),async (req,res)=>{
 
 //mysql 연결 생성
 const conn = mysql.createConnection({
-    host:process.env.AWS_ACCESS_HOST,
+    host:"customer-tutorial.cuukeoat8h7o.ap-northeast-1.rds.amazonaws.com",
     user:"admin",
-    password:process.env.AWS_ACCESS_KEY,
+    password:"kimdh991",
     port:"3306",
     database:"TeamProject"
 })
